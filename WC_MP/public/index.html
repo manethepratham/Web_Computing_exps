@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome to the Express App</h1>
+    <nav>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+
+    <h2>Users</h2>
+    <ul id="users-list"></ul>
+
+    <h2>Add User</h2>
+    <form id="add-user-form">
+      <input type="text" id="name" placeholder="Name" required>
+      <button type="submit">Add User</button>
+    </form>
+
+    <div id="update-user-section" style="display:none;">
+      <h2>Update User</h2>
+      <form id="update-user-form">
+        <input type="hidden" id="update-id">
+        <input type="text" id="update-name" placeholder="New name" required>
+        <button type="submit">Update User</button>
+      </form>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
